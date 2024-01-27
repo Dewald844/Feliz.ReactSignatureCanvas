@@ -3,6 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Dewald Haasbroek</Authors>
+    <Description>Simiple Feliz wrapper for 'react-signature-canvas'</Description>
+    <PackageProjectUrl>https://github.com/Dewald844/Feliz.ReactSignaturePad</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Dewald844/Feliz.ReactSignaturePad</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
