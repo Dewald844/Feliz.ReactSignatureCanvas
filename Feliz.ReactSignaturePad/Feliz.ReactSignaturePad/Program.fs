@@ -33,3 +33,9 @@ module ReactSignatureCanvas =
         static member inline create props =
             Interop.reactApi.createElement (signatureCanvas, createObj !!props)
 
+        static member inline clearCanvas (ref : IRefValue<obj>) =
+            ref.current?clear()
+
+        static member inline getSignatureDataUrl (ref : IRefValue<obj>) : string =
+            ref.current?getTrimmedCanvas()?toDataURL("image/png")
+
