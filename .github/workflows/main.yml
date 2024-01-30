@@ -21,12 +21,12 @@ jobs:
       run: dotnet tool restore
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: ./fable/Feliz.ReactSignaturePad
+      working-directory: Feliz.ReactSignaturePad
     - name: Build
       run: dotnet build --configuration Release --no-restore
       working-directory: ./fable/Feliz.ReactSignaturePad
     - name: Publish
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
-       PROJECT_FILE_PATH: fable/Feliz.ReactSignaturePad/Feliz.ReactSignaturePad.fsproj
+       PROJECT_FILE_PATH: Feliz.ReactSignaturePad/Feliz.ReactSignaturePad.fsproj
        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
