@@ -9,11 +9,11 @@
     <PackageProjectUrl>https://github.com/Dewald844/Feliz.ReactSignaturePad</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Dewald844/Feliz.ReactSignaturePad</RepositoryUrl>
   </PropertyGroup>
-  <PropertyGroup>
+  <ItemGroup>
     <NpmDependencies>
       <NpmPackage Name="react-signature-canvas" Version="lt 1.0.0" ResolutionStrategy="Max" />
     </NpmDependencies>
-  </PropertyGroup>
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.fs" />
     <None Include="paket.references" />
