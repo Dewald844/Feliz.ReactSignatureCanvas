@@ -17,6 +17,8 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 8.0.101
+    - name: List folder contents
+      run: ls -R
     - name: Restore tools
       run: dotnet tool restore
     - name: Restore dependencies
