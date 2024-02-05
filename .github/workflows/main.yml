@@ -20,7 +20,7 @@ jobs:
     - name: List folder contents
       run: ls -R
     - name: Restore tools
-      run: dotnet tool restore
+      run: cd .config && dotnet tool restore && cd ..
     - name: Restore dependencies
       run: dotnet paket restore
       working-directory: Feliz.ReactSignaturePad
