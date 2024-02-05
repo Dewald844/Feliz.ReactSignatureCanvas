@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -20,7 +20,7 @@ jobs:
     - name: List folder contents
       run: ls -R
     - name: Restore tools
-      run: cd .config && dotnet tool restore && cd ..
+      run: dotnet tool restore
     - name: Restore dependencies
       run: dotnet paket restore
       working-directory: Feliz.ReactSignaturePad
