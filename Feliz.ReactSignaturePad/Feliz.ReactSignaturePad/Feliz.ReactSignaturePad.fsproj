@@ -8,11 +8,18 @@
     <Description>Simple Feliz wrapper for 'react-signature-canvas'</Description>
     <PackageProjectUrl>https://github.com/Dewald844/Feliz.ReactSignaturePad</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Dewald844/Feliz.ReactSignaturePad</RepositoryUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
   <PropertyGroup>
     <NpmDependencies>
       <NpmPackage Name="react-signature-canvas" Version="lt 1.0.0" ResolutionStrategy="Max" />
     </NpmDependencies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Program.fs" />
@@ -20,7 +27,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="*.fsproj; **\*.fs; **\*.fsi" PackagePath="fable\" />
-    <Content Include="README.md" />
+    <None Include="README.md" pack="true" PackagePath="."/>
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
+  
 </Project>
