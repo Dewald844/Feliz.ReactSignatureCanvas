@@ -1,4 +1,4 @@
-﻿namespace Wrap
+﻿namespace Feliz
 
 open Fable.Core
 open Fable.Core.JsInterop
@@ -24,6 +24,7 @@ module ReactSignatureCanvas =
         static member inline dotSize              (v : float)  = "dotSize"              ==> v
         static member inline throttle             (v : float)  = "throttle"             ==> v
         static member inline penColor             (v : string) = "penColor"             ==> v
+        static member inline backgroundColor      (v : string) = "backgroundColor"      ==> v
 
         static member inline canvasProps v =
             "canvasProps" ==> (CanvasProps.create (v |> Seq.append [CanvasProps.className "signature-canvas"]))

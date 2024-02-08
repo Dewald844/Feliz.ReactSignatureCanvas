@@ -3,7 +3,7 @@
 ### Before begining firstly run
 
 ```bash
-npm install
+npm install react-signature-pad
 ```
 
 ### To run the demo
@@ -15,6 +15,9 @@ cd Feliz.ReactSignaturePad && npm run start
 ## Basic implementation
 
 ```fsharp
+
+let canvasRef = React.useRef null
+
 SignatureCanvas.create [
     SignatureCanvas.ref canvasRef
     SignatureCanvas.penColor "Black"
@@ -26,6 +29,7 @@ SignatureCanvas.create [
         CanvasProps.height 250
     ]
 ]
+
 ```
 
 ## Calling the clear method
