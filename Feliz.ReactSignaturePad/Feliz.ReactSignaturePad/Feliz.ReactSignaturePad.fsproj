@@ -8,7 +8,7 @@
     <Description>Simple Feliz wrapper for 'react-signature-canvas'</Description>
     <PackageProjectUrl>https://github.com/Dewald844/Feliz.ReactSignaturePad</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Dewald844/Feliz.ReactSignaturePad</RepositoryUrl>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
   </PropertyGroup>
   <PropertyGroup>
     <NpmDependencies>

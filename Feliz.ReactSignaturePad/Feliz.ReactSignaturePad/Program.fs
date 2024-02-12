@@ -10,10 +10,10 @@ module ReactSignatureCanvas =
 
     [<Erase>]
     type CanvasProps =
-        static member inline width (v: int) = "width" ==> v
-        static member inline height (v: int) = "height" ==> v
-        static member inline create (v: seq<string * obj>) = createObj v
-        static member inline className (v: string) = "className" ==> v
+        static member inline width     (v: int)               = "width" ==> v
+        static member inline height    (v: int)               = "height" ==> v
+        static member inline className (v: string)            = "className" ==> v
+        static member inline create    (v: seq<string * obj>) = createObj v
 
     [<Erase>]
     type SignatureCanvas =

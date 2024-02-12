@@ -1,7 +1,6 @@
 namespace App
 
 open Feliz
-open Fable.Core.JsInterop
 open Feliz.ReactSignatureCanvas
 
 type Components =

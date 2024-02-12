@@ -1,6 +1,6 @@
 ## Feliz wrapper for react-signature-pad
 
-### Before begining firstly run
+### Before beginning firstly run
 
 ```bash
 npm install react-signature-pad
@@ -15,6 +15,8 @@ cd Feliz.ReactSignaturePad && npm run start
 ## Basic implementation
 
 ```fsharp
+
+open Feliz.ReactSignaturePad
 
 let canvasRef = React.useRef null
 
@@ -31,8 +33,8 @@ SignatureCanvas.create [
 ]
 
 ```
-
 ## Calling the clear method
+
 ```fsharp
 SignatureCanvas.clearCanvas canvasRef
 ```
