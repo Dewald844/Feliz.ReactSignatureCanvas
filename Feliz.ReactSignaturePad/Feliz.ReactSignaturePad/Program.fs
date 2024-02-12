@@ -40,3 +40,4 @@ module ReactSignatureCanvas =
         static member inline getSignatureDataUrl (ref : IRefValue<obj>) : string =
             ref.current?getTrimmedCanvas()?toDataURL("image/png")
 
+
